@@ -1,0 +1,493 @@
+start test 1:VSZ:2547712
+should increase by 4KB:VSZ:2551808
+should increase by 4KB:VSZ:2555904
+should increase by 4KB:VSZ:2560000
+should increase by 4KB:VSZ:2564096
+should not change:VSZ:2564096
+start test 2:VSZ:2564096
+
+Initializing memory manager
+
+Test1: checking heap expansion; allocate 4 X 4KB chunks
+Alloted page address : 0x7fa4828a9000 and num 0
+Did we get a page 0
+Alloc
+0 0
+16 0
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 
+pg no 0 ind is 0 0x7fa4828a9000 0 0x7fa4828a9000
+Did we get a page 1
+Alloted page address : 0x7fa4828a8000 and num 1
+Did we get a page 0
+Alloc
+0 0
+16 0
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 
+pg no 1 ind is 0 0x7fa4828a8000 0 0x7fa4828a8000
+Did we get a page 1
+Did we get a page 1
+Alloted page address : 0x7fa4828a7000 and num 2
+Did we get a page 0
+Alloc
+0 0
+16 0
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 
+pg no 2 ind is 0 0x7fa4828a7000 0 0x7fa4828a7000
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloted page address : 0x7fa4828a6000 and num 3
+Did we get a page 0
+Alloc
+0 0
+16 0
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 3 ind is 0 0x7fa4828a6000 0 0x7fa4828a6000
+DeAlloc
+0 16
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+DeAlloc
+0 16
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+DeAlloc
+0 16
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+DeAlloc
+0 16
+-1 -1
+-1 -1
+-1 -1
+-1 -1
+Test1: complete
+
+Test2: Check splitting of existing free chunks: allocate 64 X 256B chunks
+Did we get a page 1
+Alloc
+0 0
+1 15
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 0 0x7fa4828a9000 0 0x7fa4828a9000
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 14
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 1 0x7fa4828a9000 256 0x7fa4828a9100
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 13
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 2 0x7fa4828a9000 512 0x7fa4828a9200
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 12
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 3 0x7fa4828a9000 768 0x7fa4828a9300
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 4 0x7fa4828a9000 1024 0x7fa4828a9400
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 5 0x7fa4828a9000 1280 0x7fa4828a9500
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 6 0x7fa4828a9000 1536 0x7fa4828a9600
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 7 0x7fa4828a9000 1792 0x7fa4828a9700
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 8 0x7fa4828a9000 2048 0x7fa4828a9800
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 9 0x7fa4828a9000 2304 0x7fa4828a9900
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 10 0x7fa4828a9000 2560 0x7fa4828a9a00
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 11 0x7fa4828a9000 2816 0x7fa4828a9b00
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 12 0x7fa4828a9000 3072 0x7fa4828a9c00
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 13 0x7fa4828a9000 3328 0x7fa4828a9d00
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x7fa4828a6000 
+pg no 0 ind is 14 0x7fa4828a9000 3584 0x7fa4828a9e00
+Holy Shit
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 0 ind is 15 0x7fa4828a9000 3840 0x7fa4828a9f00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 15
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 0 0x7fa4828a8000 0 0x7fa4828a8000
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 14
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 1 0x7fa4828a8000 256 0x7fa4828a8100
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 13
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 2 0x7fa4828a8000 512 0x7fa4828a8200
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 12
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 3 0x7fa4828a8000 768 0x7fa4828a8300
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 4 0x7fa4828a8000 1024 0x7fa4828a8400
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 5 0x7fa4828a8000 1280 0x7fa4828a8500
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 6 0x7fa4828a8000 1536 0x7fa4828a8600
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 7 0x7fa4828a8000 1792 0x7fa4828a8700
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 8 0x7fa4828a8000 2048 0x7fa4828a8800
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 9 0x7fa4828a8000 2304 0x7fa4828a8900
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 10 0x7fa4828a8000 2560 0x7fa4828a8a00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 11 0x7fa4828a8000 2816 0x7fa4828a8b00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 12 0x7fa4828a8000 3072 0x7fa4828a8c00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 13 0x7fa4828a8000 3328 0x7fa4828a8d00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 14 0x7fa4828a8000 3584 0x7fa4828a8e00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 1 ind is 15 0x7fa4828a8000 3840 0x7fa4828a8f00
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 15
+-1 -1
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 0 0x7fa4828a7000 0 0x7fa4828a7000
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 14
+-1 -1
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 1 0x7fa4828a7000 256 0x7fa4828a7100
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 13
+-1 -1
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 2 0x7fa4828a7000 512 0x7fa4828a7200
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 12
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 3 0x7fa4828a7000 768 0x7fa4828a7300
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 4 0x7fa4828a7000 1024 0x7fa4828a7400
+Holy Shit
+Did we get a page 1
+Did we get a page 1
+Did we get a page 1
+Alloc
+0 0
+1 0
+2 0
+3 0
+4 0
+0x7fa4828a9000 0x7fa4828a8000 0x7fa4828a7000 0x10828a6000 
+pg no 2 ind is 5 0x7fa4828a7000 1280 0x7fa4828a7500
+Holy Shit
+Did we get a pa
